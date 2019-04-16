@@ -21,6 +21,11 @@ h1.hero {
     text-indent: -41px;
 
 }
+button{
+padding:10px;
+background-color:red;
+margin:10px;
+}
 
 h1{
     font-family: 'Roboto', sans-serif;

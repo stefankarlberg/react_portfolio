@@ -11,6 +11,7 @@ import './css/style.css'
 import { BrowserRouter } from 'react-router-dom'
 import Projects from "./Projects"
 import About from "./About"
+import Admin from "./Admin"
 import { Switch, Route } from 'react-router-dom'
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
                         <Route exact path='/' component={Hello}></Route>
                         <Route exact path='/about' component={About}></Route>
                         <Route exact path='/projects' component={Projects}></Route>
+                        <Route exact path='/admin' component={Admin}></Route>
                         </Switch>
                 </div>
             </div >
