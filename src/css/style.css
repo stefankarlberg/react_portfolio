@@ -1,26 +1,55 @@
+
+
+
 .hero {
   /* background: url("/src/img/background.jpg") no-repeat center center fixed; */
    background-color: rgb(235, 235, 235);
 }
-h1 {
-font-size: 16vw;
+h1.hero {
+font-size: 18vw;
 color: white;
 padding-top: 20%;
 }
+
+h1{
+    font-size: 30px;
+    color: grey;
+    padding-top: 6%;
+
+    }
 
 h2 {
     font-size: 32px;
     color: black;
 }
 
+
+.Portfolio_grid{
+    display: flex;
+    flex-flow: row wrap;
+    }
+
+.Portfolio_grid_item{
+margin-right: 20px;
+margin-bottom:20px;
+min-height: 400px;
+width: 300px;
+border:1px solid rgb(213, 211, 211);
+}
+
+
  span.hero{
     white-space: nowrap;
  }
 
 .landing_left {
-    width:25%;
+    width:20%;
 }
 
 .landing_right {
-    width:75%;
+    width:80%;
+}
+
+.card{
+    width: 300px;
 }

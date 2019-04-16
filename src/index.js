@@ -6,6 +6,7 @@ import Sidebar from "./Sidebar"
 import Footer from "./Footer"
 import './css/tailwind.src.css'
 import './css/tailwind.css'
+import './css/style.css'
 
 import { BrowserRouter } from 'react-router-dom'
 import Projects from "./Projects"
@@ -20,28 +21,15 @@ const App = () => {
                 <Sidebar />
                 </div>
                 <div className="landing_right h-screen">
-                    <div className="p-8 h-full">
-                        <div className="hero w-full h-full object-center">
-                            <h1><span className="hero">WHY ME</span></h1>
-                        </div>
-                    </div>
-                </div>
-            </div >
-
-            <div className="mb-4">
-                <div className="w-full pt-8 text-center">
-                <h2 className="text-black">PORTFOLIO</h2>
-                </div>
-                <div className="mt-6 object-center "> 
-                    <Hello />
-                    <Switch>
+                        <Switch>
                         <Route exact path='/' component={Hello}></Route>
                         <Route exact path='/about' component={About}></Route>
                         <Route exact path='/projects' component={Projects}></Route>
-                    </Switch>
-                </div>    
-            </div>
+                        </Switch>
+                </div>
+            </div >
 
+            
                
         </div>
 

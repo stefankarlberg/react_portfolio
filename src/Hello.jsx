@@ -2,7 +2,15 @@ import React from "react"
 
 const Hello = () => {
     return (
-        <p className="content-text">Hello World</p>
+        
+        <div className="p-8 h-full">
+           <div className="hero w-full h-full object-center">
+                <div className="flex flex-no-wrap">
+                    <h1 className="hero"><span className="hero">WHY ME</span></h1>
+                </div>
+           </div>
+        </div>
+       
 )
 }
 
