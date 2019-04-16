@@ -1,21 +1,31 @@
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+
 
 
 .hero {
-  /* background: url("/src/img/background.jpg") no-repeat center center fixed; */
-   background-color: rgb(235, 235, 235);
+background: url("/src/img/hero1.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center center;
+background-size: cover;
+
 }
 h1.hero {
-font-size: 18vw;
-color: white;
-padding-top: 20%;
+    font-size: 21vw;
+    color: white;
+    padding-top: 17%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    overflow: hidden;
+    text-indent: -41px;
+
 }
 
 h1{
-    font-size: 30px;
-    color: grey;
-    padding-top: 6%;
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(208, 208, 208);
     }
 
 h2 {

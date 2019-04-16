@@ -30,9 +30,9 @@ class Projects extends Component {
 
 
         return (
-            <div>
-                <h1 className="page_SK">PROJECTS</h1>
-                <div class="Portfolio_grid">
+            <div className="mt-32" >
+                <h1 className="mb-8">PROJECTS</h1>
+                <div className="Portfolio_grid">
                 {projectsList}
                 </div>
             </div>
