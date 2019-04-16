@@ -1,0 +1,26 @@
+.hero {
+  /* background: url("/src/img/background.jpg") no-repeat center center fixed; */
+   background-color: rgb(235, 235, 235);
+}
+h1 {
+font-size: 16vw;
+color: white;
+padding-top: 20%;
+}
+
+h2 {
+    font-size: 32px;
+    color: black;
+}
+
+ span.hero{
+    white-space: nowrap;
+ }
+
+.landing_left {
+    width:25%;
+}
+
+.landing_right {
+    width:75%;
+}
