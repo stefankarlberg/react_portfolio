@@ -20,7 +20,7 @@ import 'tailwind.css'
  @apply min-h-screen pt-4 bg-blue-darkest;
 }
 .page-content {
- @apply h-full bg-blue md:flex flex-row;
+ @apply h-full bg-blue flex-row;
 }
 
 /** Header **/
@@ -49,6 +49,3 @@ import 'tailwind.css'
     @apply px-4 pt-4 flex-1 overflow-y-scroll;
 }
 
-.content-text {
-    @apply text-black-dark;
-}

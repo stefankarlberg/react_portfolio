@@ -23,13 +23,6 @@ class Formular extends React.Component {
   
     render() {
       return (
-
-
-
-
-
-
-
         <form onSubmit={this.handleSubmit}>
         <div class="flex mr-12 mb-6">
             <div class="w-1/5">
@@ -43,11 +36,6 @@ class Formular extends React.Component {
         <button classNAME = "formular" type="submit" value="Submit">Skicka</button>
   </form>
 
-
-
- 
-          
-    
       );
     }
   }

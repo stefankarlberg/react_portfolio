@@ -3,70 +3,35 @@
 
 
 
-.hero {
-background: url("/src/img/hero1.jpg");
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center center;
-background-size: cover;
+ /*Fonts */
 
-}
-
-.intro_container{
-margin-bottom: 60px;
-}
-
-.page_container{
-    padding: 20px;
-    padding-right: 9%;
-    padding-top:140px;
-    }
-
-h1.hero {
-    font-size: 21vw;
-    color: white;
-    padding-top: 17%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    overflow: hidden;
-    text-indent: -42px;
-
-}
-
-h1.hero_small {
-    font-size: 42vw;
-    color: white;
-    padding-top: 17%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    overflow: hidden;
-    text-indent: -10px;
-    line-height: 0.9em;
-    text-align: center;
-
-}
-
-.intro {
-    font-size: 27px;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    line-height: 1.5em;
-    text-align: left;
-}
-
-
-button{
-padding:10px;
-background-color:red;
-margin:10px;
-}
 
 h1{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: rgb(208, 208, 208);
     }
+
+
+h1.hero {
+    font-size: 21vw;
+    color: white;
+    padding-top: 12%;
+    font-weight: 700;
+    overflow: hidden;
+    text-indent: -42px;
+}
+
+h1.hero_small {
+    font-size: 42vw;
+    color: white;
+    padding-top: 17%;
+    font-weight: 700;
+    overflow: hidden;
+    text-indent: -10px;
+    line-height: 0.9em;
+    text-align: center;
+}
 
 h2 {
     font-size: 32px;
@@ -81,6 +46,67 @@ p {
     font-size: 17px
 }
 
+p.login {
+    color: white;
+    font-size: 23px;
+    margin-bottom:30px;
+    margin-top: -11px
+}
+
+p.intro {
+    font-size: 27px;
+    color: black;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+/*components */
+
+button {
+padding:10px;
+background-color:white;
+margin:10px;
+padding-left:30px;
+padding-right:30px;
+font-size:18px;
+border-radius:22px;
+}
+
+/*page containers */
+
+.landing{
+    display: flex;
+    flex-flow: row wrap;
+    }
+
+.landing_left {
+    width:20%;
+    }
+
+.landing_right {
+    width:80%;
+}
+
+.hero {
+    background: url("/src/img/hero1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: -20px;
+}
+    
+.intro_container{
+    margin-bottom: 60px;
+}
+    
+.page_container{
+        padding: 20px;
+        padding-right: 9%;
+        padding-top:140px;
+}
+    
 .flex-container {
     -ms-box-orient: horizontal;
     display: -webkit-box;
@@ -97,7 +123,7 @@ p {
     flex-wrap: wrap;
     }
 
-    .flex-item_500 {
+.flex-item_500 {
     width: 450px;
     padding: 30px 0px 30px 0px;
     margin:0p 30px 0px 0px;
@@ -105,27 +131,35 @@ p {
     flex-grow: 1;
     }
 
-
-
-.page_grid {
+.flex-login{
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    
     }
 
-.page_grid_grid_item {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    min-height: 138px;
-    flex-basis: 279px;
-    flex-grow: 1;
-    flex-shrink: 0;
-    border-top: 2px solid black;
+.flex-item_login{ 
+    width: 200px;
     }
-    
 
+.landing_login_form{
+    padding: 10px;
+    font-size: 23px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 34px;
+    background: none;
+    width: 300px;
+    padding-left: 20px;
+    text-align: center;
+    }
 
 .Portfolio_grid{
     display: flex;
@@ -138,28 +172,26 @@ p {
     min-height: 380px;
     width: 300px;
     border:1px solid rgb(213, 211, 211);
-}
+    }
 
 
  span.hero{
     white-space: nowrap;
- }
+    }
 
-.landing{
-    display: flex;
-    flex-flow: row wrap;
-}
 
-.landing_left {
-    width:20%;
-}
-
-.landing_right {
-    width:80%;
-}
 
 .card{
     width: 300px;
+}
+
+.powered_by img {
+    width: 300px;
+    height: 106px;
+    float: right;
+    margin-right: 20px;
+    margin-top:auto;
+    justify-content: flex-end;
 }
 
 
@@ -185,6 +217,13 @@ p {
     p {
         font-size: 17px
     }
+
+    .landing_right {
+        width:100%;
+    }
+    .landing_login_form {
+        width: 200px;
+    }
 }
 
 @media (max-width: 576px) { 
@@ -196,5 +235,40 @@ p {
         min-height: 380px;
         width: 100%;
     }
+
+
 }
+
+@media (min-width: 1200px) { 
+    .landing_left {
+        width:15%;
+        }
+    
+    .landing_right {
+        width:85%;
+    }
+
+    h1.hero {
+        font-size: 22vw;
+        padding-top: 4%;
+        text-indent: -50px;
+    }
+}
+
+@media (min-width: 1500px) { 
+    .landing_left {
+        width:10%;
+        }
+    
+    .landing_right {
+        width:90%;
+    }
+
+    h1.hero {
+        font-size: 24vw;
+        padding-top: 5%;
+        text-indent: -45px;
+    }
+}
+
 

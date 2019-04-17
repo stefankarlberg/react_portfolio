@@ -20,7 +20,7 @@ class Projects extends Component {
         if (projects.length > 0) {
             projectsList = projects.map(project => {
                 return (
-                    <div class="Portfolio_grid">
+                    <div className="Portfolio_grid">
                     <div key={project.id} className="">
                   
                         <ProjectCard project={project} />
