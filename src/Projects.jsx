@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import axios from "axios"
 import ProjectCard from "./ProjectCard"
 import './css/style.css'
+import './css/tailwind.src.css'
+import './css/tailwind.css'
 
 class Projects extends Component {
     constructor() {
@@ -30,12 +32,22 @@ class Projects extends Component {
 
 
         return (
-            <div className="mt-32" >
-                <h1 className="mb-8">PROJECTS</h1>
-                <div className="Portfolio_grid">
-                {projectsList}
+           
+
+                <div className="page_container" >
+                    <div className="intro_container">
+                        <p className="intro">Ipsum sdolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias? or dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? or dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? </p>
+                    </div>
+
+                <div className="mt-2" >
+                    <div className="Portfolio_grid">
+                    {projectsList}
                 </div>
-            </div>
+                </div>
+
+                </div>
+
+
         )
     }
 

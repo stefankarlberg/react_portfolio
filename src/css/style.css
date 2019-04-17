@@ -13,7 +13,7 @@ background-size: cover;
 }
 
 .intro_container{
-margin-bottom: 40px;
+margin-bottom: 60px;
 }
 
 .page_container{
@@ -73,10 +73,44 @@ h2 {
     color: black;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: rgb(208, 208, 208);
+    line-height:1.5em;
+    font-size: 17px
+}
+
+.flex-container {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 17px;
+    }
+
+.wrap { 
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    }
+
+    .flex-item_500 {
+    width: 450px;
+    padding: 30px 0px 30px 0px;
+    margin:0p 30px 0px 0px;
+    border-top: 2px solid black;
+    flex-grow: 1;
+    }
+
+
 
 .page_grid {
     display: flex;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    
     }
 
 .page_grid_grid_item {
@@ -99,10 +133,10 @@ h2 {
     }
 
 .Portfolio_grid_item{
-    margin-right: 20px;
-    margin-bottom:20px;
-    min-height: 400px;
-    width: 260px;
+    margin-right: 35px;
+    margin-bottom:35px;
+    min-height: 380px;
+    width: 300px;
     border:1px solid rgb(213, 211, 211);
 }
 
@@ -129,25 +163,38 @@ h2 {
 }
 
 
+
 @media (max-width: 768px) { 
 
+
+    .Portfolio_grid_item{
+        margin-right: 35px;
+        margin-bottom:35px;
+        min-height: 380px;
+        width: 240px;
+        border:1px solid rgb(213, 211, 211);
+    }
     .intro {
         font-size: 18px;
         color: black;
         font-family: 'Roboto', sans-serif;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 1.5em;
-        text-align: left;
     }
 
-    .page_grid_grid_item {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        min-height: 0px;
-        flex-basis: 333px;
-
+    p {
+        font-size: 17px
     }
-
 }
+
+@media (max-width: 576px) { 
+
+
+    .Portfolio_grid_item{
+        margin-right: 35px;
+        margin-bottom:35px;
+        min-height: 380px;
+        width: 100%;
+    }
+}
+

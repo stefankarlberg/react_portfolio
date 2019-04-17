@@ -12,7 +12,7 @@ const Sidebar = () => {
                 <ul className="sidebar_navigation mt-8 list-reset leading-loose">
                 <li className="mr-6"><NavLink className="text-black text-xl  hover:text-black no-underline" activeStyle={{fontWeight: "bold"}} to='/projects'>Projects</NavLink></li>
                 <li className="mr-6"><NavLink className="text-black text-xl hover:text-black no-underline" activeStyle={{fontWeight: "bold"}} to='/about'>About Me</NavLink></li>
-                <li className="mr-6"><NavLink className="text-black text-xl hover:text-black no-underline" activeStyle={{fontWeight: "bold"}} to='/admin'>Admin</NavLink></li>
+                <li className="mr-6"><NavLink className="text-black text-xl hover:text-black no-underline" activeStyle={{fontWeight: "bold"}} to='/login'>Admin</NavLink></li>
                
                 </ul>
             </nav>

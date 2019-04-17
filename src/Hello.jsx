@@ -11,6 +11,7 @@ const Hello = () => {
                 <div className="flex md:hidden">
                     <h1 className="hero_small"><span className="flex">WHY</span> <span className="flex">ME?</span></h1>
                 </div>
+                
            </div>
         </div>
        
