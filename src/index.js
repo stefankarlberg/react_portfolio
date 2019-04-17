@@ -17,11 +17,14 @@ import { Switch, Route } from 'react-router-dom'
 const App = () => {
     return (
        <div>
-            <div className="h-screen w-full sm:flex">
-                <div className="landing_left h-screen p-4 pt-8 pb-8">
-                <Sidebar />
+            <div className="h-screen w-full md:flex ">
+                <div className="hidden md:w-1/5 md:inline-flex lg:inline-flex xl:inline-flex h-screen p-4 pt-8 pb-8">
+                    <Sidebar />
                 </div>
-                <div className="landing_right h-screen">
+                <div className="full md:hidden vp-4 mt-0">
+                    <Header />
+                </div>
+                <div className="sm:w-full md:w-4/5 h-screen">
                         <Switch>
                         <Route exact path='/' component={Hello}></Route>
                         <Route exact path='/about' component={About}></Route>

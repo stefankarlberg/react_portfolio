@@ -18,7 +18,20 @@ h1.hero {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     overflow: hidden;
-    text-indent: -41px;
+    text-indent: -42px;
+
+}
+
+h1.hero_small {
+    font-size: 42vw;
+    color: white;
+    padding-top: 17%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    overflow: hidden;
+    text-indent: -10px;
+    line-height: 0.9em;
+    text-align: center;
 
 }
 button{
@@ -39,6 +52,8 @@ h2 {
 }
 
 
+
+
 .Portfolio_grid{
     display: flex;
     flex-flow: row wrap;
@@ -56,6 +71,11 @@ border:1px solid rgb(213, 211, 211);
  span.hero{
     white-space: nowrap;
  }
+
+.landing{
+    display: flex;
+    flex-flow: row wrap;
+}
 
 .landing_left {
     width:20%;
