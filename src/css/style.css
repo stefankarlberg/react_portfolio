@@ -330,11 +330,11 @@ nav a:link {
 
 @media (min-width: 1500px) { 
     .landing_left {
-        width:10%;
+        width:13%;
         }
     
     .landing_right {
-        width:90%;
+        width:87%;
     }
 
     h1.hero {
