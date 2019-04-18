@@ -5,7 +5,7 @@ const ProjectCard = (props) => {
     let project = props.project
     return (
 
-        <div class="Portfolio_grid_item">
+        <div className="Portfolio_grid_item">
             <div>
             <img src={project.image} className="block h-auto w-full" style={{ height: '200px', objectFit: 'cover' }} />
             </div>

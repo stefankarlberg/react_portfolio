@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import Welcome from "./Welcome"
+import LoginForm from "./LoginForm.jsx"
 import Header from "./Header"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"
@@ -13,6 +14,21 @@ import Projects from "./Projects"
 import About from "./About"
 import Admin from "./Admin"
 import { Switch, Route } from 'react-router-dom'
+const LoginUser = React.createContext();
+
+class Highest extends React.Component {
+  state = {
+      name : 'false',
+  }
+  render() {
+      return ( 
+      <LoginUser.Provider value={this.state}>
+        {this.props.children}
+      </LoginUser.Provider>
+      )
+  }
+}
+
 
 const App = () => {
     return (
@@ -32,20 +48,10 @@ const App = () => {
                         <Route exact path='/admin' component={Admin}></Route>
                         </Switch>
                 </div>
-            </div >
-
-            
-               
-        </div>
-
-
-      
-
-         
-           
-       
-)
-};
+            </div >       
+        </div>      
+      )
+    };
 
 ReactDOM.render((
     <BrowserRouter>
