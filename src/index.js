@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Hello from "./Hello"
+import Welcome from "./Welcome"
 import Header from "./Header"
 import Sidebar from "./Sidebar"
 import Footer from "./Footer"
@@ -24,9 +24,9 @@ const App = () => {
                 <div className="full md:hidden vp-4 mt-0">
                     <Header />
                 </div>
-                <div className="landing_right sm:w-full md:w-4/5 h-screen">
+                <div className="landing_right w-full md:w-4/5 h-screen">
                         <Switch>
-                        <Route exact path='/' component={Hello}></Route>
+                        <Route exact path='/' component={Welcome}></Route>
                         <Route exact path='/about' component={About}></Route>
                         <Route exact path='/projects' component={Projects}></Route>
                         <Route exact path='/admin' component={Admin}></Route>

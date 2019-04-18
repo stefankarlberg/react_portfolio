@@ -34,8 +34,8 @@ class LoginForm extends React.Component {
                <input className="landing_login_form" placeholder="Password" type="text" value={this.state.value2} onChange={this.handleChange} />
            </div>
         </div>
-        <div className="mr-auto mt-6 ml-auto text-center">
-           <button classNAME = "login" type="submit" value="Submit">Log In</button>
+        <div className="mr-auto mt-2 ml-auto text-center">
+           <button className = "login" type="submit" value="Submit">Log In</button>
         </div>
        
         
