@@ -1,5 +1,9 @@
 import React, { Component } from "react"
 import axios from "axios"
+import ProjectCard from "./ProjectCard"
+import './css/style.css'
+import './css/tailwind.src.css'
+import './css/tailwind.css'
 
 class Projects extends Component {
     constructor() {
@@ -12,14 +16,15 @@ class Projects extends Component {
     render() {
         const projects = this.state.projects
         let projectsList 
-
+       
         if (projects.length > 0) {
             projectsList = projects.map(project => {
                 return (
-                    <div key={project.id}>
-                        <h3 className="content-text">
-                            {project.name}
-                        </h3>
+                    <div className="Portfolio_grid">
+                    <div key={project.id} className="">
+                  
+                        <ProjectCard project={project} />
+                    </div>
                     </div>
                 )
             })
@@ -27,10 +32,22 @@ class Projects extends Component {
 
 
         return (
-            <div>
-                <h1 className="content-text">My Projects</h1>
-                {projectsList}
-            </div>
+           
+
+                <div className="page_container" >
+                    <div className="intro_container">
+                        <p className="intro">Ipsum sdolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias? or dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? or dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? </p>
+                    </div>
+
+                <div className="mt-2" >
+                    <div className="Portfolio_grid">
+                    {projectsList}
+                </div>
+                </div>
+
+                </div>
+
+
         )
     }
 

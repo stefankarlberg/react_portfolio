@@ -3,22 +3,29 @@
 @tailwind utilities;
 @tailwind screens;
 
+import 'tailwind.css'
+
 /** Page **/ 
 
-.container {
-    @apply container;
+.container1 {
+@apply h-full bg-black;
+}
+
+.sidebar {
+ @apply w-1/5 bg-grey h-12;
+ @apply bg-blue text-white font-bold py-2 px-4 rounded;
 }
 
 .page-wrapper {
-    @apply min-h-screen pt-4 bg-blue-darkest;
+ @apply min-h-screen pt-4 bg-blue-darkest;
 }
 .page-content {
-  @apply full h-full bg-blue md:flex flex-row;
+ @apply h-full bg-blue flex-row;
 }
 
 /** Header **/
 .header {
-    @apply flex items-center justify-between flex-wrap bg-blue-darkest p-6;
+    @apply flex items-center justify-between flex-wrap bg-white p-6;
 }
 
 .header-title {
@@ -42,6 +49,3 @@
     @apply px-4 pt-4 flex-1 overflow-y-scroll;
 }
 
-.content-text {
-    @apply text-black-dark;
-}

@@ -1,17 +1,24 @@
 import React  from "react"
 import { NavLink, Link } from 'react-router-dom';
+import './css/tailwind.css'
+import './css/style.css'
 
 const Sidebar = () => {
         return (
-                <nav className="sidebar">
-                <h2 className="header-title">
-                    <Link className="text-white hover:text-grey no-underline" to='/'>My Portfolio</Link>
+                <div>
+                <h2 className="logo1 ml-6">
+                    <Link className="logo1 " to='/'>LOGO</Link>
                 </h2>
-                <ul className="sidebar_navigation">
-                    <li className="mr-6"><NavLink className="text-white hover:text-grey no-underline" activeStyle={{fontWeight: "bold"}} to='/about'>About Me</NavLink></li>
-                    <li className="mr-6"><NavLink className="text-white hover:text-grey no-underline" activeStyle={{fontWeight: "bold"}} to='/projects'>My Projects</NavLink></li>
+                <nav className="p-6">
+                <ul className="sidebar_navigation mt-2 list-reset leading-loose">
+                <li><NavLink to='/'>HOME</NavLink></li>
+                <li><NavLink to='/about'>ABOUT ME</NavLink></li>
+                <li><NavLink to='/about'>CV</NavLink></li>
+                <li><NavLink to='/projects'>PROJECTS</NavLink></li>
+                
                 </ul>
             </nav>
+            </div>
         )   
 }
 
