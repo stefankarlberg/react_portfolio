@@ -14,20 +14,7 @@ import Projects from "./Projects"
 import About from "./About"
 import Admin from "./Admin"
 import { Switch, Route } from 'react-router-dom'
-const LoginUser = React.createContext();
-
-class Highest extends React.Component {
-  state = {
-      name : 'false',
-  }
-  render() {
-      return ( 
-      <LoginUser.Provider value={this.state}>
-        {this.props.children}
-      </LoginUser.Provider>
-      )
-  }
-}
+const ThemeContext = React.createContext('light');
 
 
 const App = () => {

@@ -2,6 +2,7 @@ import React from "react"
 import LoginForm from "./LoginForm"
 
 
+
 const Welcome = () => {
     return (
         
@@ -19,6 +20,7 @@ const Welcome = () => {
                             <p className="login">Login and check out the Why?</p>
                         </div>
                         <LoginForm />
+                       
                         <div id="app"></div>
                     </div>
                 </div>

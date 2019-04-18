@@ -11,10 +11,10 @@ const About = () => {
                 <p className="intro">Ipsum sdolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias? or dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? or dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? </p>
             </div>
             <div className="flex-container wrap">
-                <div className="flex-item_500 md:mr-3">
+                <div className="flex-item_500 ">
                     <h2 className="text-black">Headline</h2>
                 </div>
-                <div className="flex-item_500 md:ml-3">
+                <div className="flex-item_500 ">
                     <p className="text-black">Psum sdolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga sa. dolor dolorem consectetur est velit fugiat. Dolorem provident co dolor dolorem consectetur est velit fugiat. Dolorem provident co</p>
                 </div>
             </div>

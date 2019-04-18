@@ -3,8 +3,6 @@ import './css/tailwind.css'
 import './css/style.css'
 
 
-
-
   class LoginForm extends React.Component {
     constructor () {
       super();
@@ -18,8 +16,7 @@ import './css/style.css'
         var state = {};
         state[key] = e.target.value;
         this.setState(state);
-      }.bind(this);
-      
+      }.bind(this); 
     }
 
     handleSubmit(event) {
@@ -28,21 +25,11 @@ import './css/style.css'
           password: this.state.password,
       }
 
-      if (this.state.name == "Test" && this.state.password =="Test") {
-
-  
-        alert('Hello ' + data.name + ', your message is: ' + data.password);
-  
+      if (this.state.name == "test" && this.state.password =="test") {
+        alert('Name ' + data.name + ', Password: ' + data.password);
         }
         else {
-
-
-                <div>
-                  <LoginUser.Consumer>
-                    {(context) => context.name}
-                  </LoginUser.Consumer>
-              </div>
-
+        alert('Wrong login-data');
         }
 
       event.preventDefault();
