@@ -1,4 +1,5 @@
 {
+  "homepage": "https://stefankarlberg.github.io/react_portfolio/",
   "name": "react_portfolio",
   "version": "1.0.0",
   "description": "",
@@ -6,9 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "postcss src/css/tailwind.src.css -o src/css/tailwind.css",
-    "watch:css": "postcss src/css/tailwind.src.css -o src/css/tailwind.css -w",
+   "watch:css": "postcss src/css/tailwind.src.css -o src/css/tailwind.css -w",
     "start": "npm run watch:css & webpack-dev-server --inline --mode development --open",
-    "build": "npm run build:css && webpack --mode production"
+    "build": "npm run build:css && webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +20,7 @@
     "axios": "^0.18.0",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
