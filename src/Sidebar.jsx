@@ -18,6 +18,12 @@ const Sidebar = () => {
                 
                 </ul>
             </nav>
+
+            <Router basename={'/subdirectory'}>
+  <Route path={`${process.env.PUBLIC_URL}/`} component={Home} />
+  <Route path={`${process.env.PUBLIC_URL}/news`} component={News} />
+  <Route path={`${process.env.PUBLIC_URL}/about`} component={About} />
+</Router>
             </div>
         )   
 }
