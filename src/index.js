@@ -14,7 +14,6 @@ import Projects from "./Projects"
 import About from "./About"
 import Admin from "./Admin"
 import { Switch, Route } from 'react-router-dom'
-const ThemeContext = React.createContext('light');
 
 
 const App = () => {
@@ -30,7 +29,8 @@ const App = () => {
                 <div className="landing_right w-full md:w-4/5 h-screen">
                         <Switch>
                         <Route exact path='/' component={Welcome}></Route>
-                        <Route exact path='/about' component={About}></Route>
+                        
+                        <Route path={`${process.env.PUBLIC_URL}/about`} component={About} />
                         <Route exact path='/projects' component={Projects}></Route>
                         <Route exact path='/admin' component={Admin}></Route>
                         </Switch>
