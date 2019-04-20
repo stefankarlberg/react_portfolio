@@ -27,6 +27,7 @@ const App = () => {
                     <Header />
                 </div>
                 <div className="landing_right w-full md:w-4/5 h-screen">
+                <p>${process.env.PUBLIC_URL}</p>
                         <Switch>
                         <Route exact path='/' component={Welcome}></Route>
                         
