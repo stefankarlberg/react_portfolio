@@ -28,13 +28,6 @@ module.exports = {
       }
     ]
   },
-  test: /\.(png|jpg|gif)$/,
-  resolve: { extensions: ["*", ".jpg", ".jsx"] },
-  output: {
-    path: path.resolve(__dirname, "build/"),
-    publicPath: "/build/",
-    filename: "bundle.js"
-  },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
     path: path.resolve(__dirname, "build/"),
