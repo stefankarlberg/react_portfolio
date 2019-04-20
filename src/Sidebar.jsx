@@ -13,8 +13,8 @@ const Sidebar = () => {
                 <ul className="sidebar_navigation mt-2 list-reset leading-loose">
                 <li><NavLink to='/'>HOME</NavLink></li>
                 <li><NavLink to='/about'>ABOUT ME</NavLink></li>
-                <li><NavLink to='src/about'>CV</NavLink></li>
-                <li><NavLink to='src/projects'>PROJECTS</NavLink></li>
+                <li><NavLink to='/about'>CV</NavLink></li>
+                <li><NavLink to='/projects'>PROJECTS</NavLink></li>
                 
                 </ul>
             </nav>

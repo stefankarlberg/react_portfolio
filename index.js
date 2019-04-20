@@ -1,18 +1,18 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Welcome from "./Welcome"
-import LoginForm from "./LoginForm.jsx"
-import Header from "./Header"
-import Sidebar from "./Sidebar"
+import Welcome from "src/Welcome"
+import LoginForm from "src/LoginForm.jsx"
+import Header from "src/Header"
+import Sidebar from "src/Sidebar"
 import Footer from "./Footer"
-import './css/tailwind.src.css'
-import './css/tailwind.css'
-import './css/style.css'
+import 'src/css/tailwind.src.css'
+import 'src/css/tailwind.css'
+import 'src/css/style.css'
 
 import { BrowserRouter } from 'react-router-dom'
-import Projects from "./Projects"
-import About from "./About"
-import Admin from "./Admin"
+import Projects from "src/Projects"
+import About from "src/About"
+import Admin from "src/Admin"
 import { Switch, Route } from 'react-router-dom'
 const ThemeContext = React.createContext('light');
 
@@ -29,10 +29,10 @@ const App = () => {
                 </div>
                 <div className="landing_right w-full md:w-4/5 h-screen">
                         <Switch>
-                        <Route exact path='/' component={Welcome}></Route>
-                        <Route exact path='/about' component={About}></Route>
-                        <Route exact path='/projects' component={Projects}></Route>
-                        <Route exact path='/admin' component={Admin}></Route>
+                        <Route exact path='src/' component={Welcome}></Route>
+                        <Route exact path='src/about' component={About}></Route>
+                        <Route exact path='src/projects' component={Projects}></Route>
+                        <Route exact path='src/admin' component={Admin}></Route>
                         </Switch>
                 </div>
             </div >       
