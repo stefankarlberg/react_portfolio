@@ -15,6 +15,7 @@ const Sidebar = () => {
                 <li><NavLink to='/about'>ABOUT ME</NavLink></li>
                 <li><NavLink to='/about'>CV</NavLink></li>
                 <li><NavLink to='/projects'>PROJECTS</NavLink></li>
+                <p>test</p>
                 <p>${process.env.PUBLIC_URL}</p>
                 </ul>
             </nav>
