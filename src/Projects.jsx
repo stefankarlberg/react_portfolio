@@ -29,13 +29,11 @@ class Projects extends Component {
                 )
             })
         }
-
-
+        
         return (
-           
-
                 <div className="page_container" >
                     <div className="intro_container">
+                    <h1 className="page">Projects</h1>
                         <p className="intro">Ipsum sdolor dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? Et quos harum excepturi dolorum molestias? or dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? or dolorem consectetur est velit fugiat. Dolorem provident corporis fuga saepe distinctio ipsam? </p>
                     </div>
 

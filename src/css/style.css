@@ -47,6 +47,18 @@ h1.hero_small {
     text-align: center;
 }
 
+h1.page {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    right: 0;
+    text-align: right;
+    margin-bottom: 76px;
+    font-size: 56px;
+    letter-spacing: 1px;
+    color: #c5c5c5;
+    text-transform: uppercase;
+}
+
 h2 {
     font-size: 32px;
     color: black;
@@ -110,7 +122,7 @@ border-radius:22px;
 .page_container{
         padding: 20px;
         padding-right: 9%;
-        padding-top:140px;
+        padding-top: 56px;
 }
     
 .flex-container {
@@ -129,7 +141,7 @@ border-radius:22px;
     flex-wrap: wrap;
     }
 
-.flex-item_500 {
+.flex-item {
     width: 450px;
     padding: 30px 0px 30px 0px;
     margin:0px 30px 0px 0px;
@@ -211,7 +223,7 @@ span.hero{
 
 nav a:link {
     color: rgb(0, 0, 0);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32px;
     font-size: 19px;
     letter-spacing: 0.5px;
@@ -244,6 +256,10 @@ nav a:link {
         width: 200px;
         margin: 0px 5px 0px 5px;
     }
+
+    .flex-item {
+        margin:0px;
+        }
 
 }
 
@@ -314,11 +330,11 @@ nav a:link {
 
 @media (min-width: 1200px) { 
     .landing_left {
-        width:15%;
+        width:17%;
         }
     
     .landing_right {
-        width:85%;
+        width:83%;
     }
 
     h1.hero {
