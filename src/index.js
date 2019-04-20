@@ -29,7 +29,7 @@ const App = () => {
                 </div>
                 <div className="landing_right w-full md:w-4/5 h-screen">
                         <Switch>
-                        <Route exact path='/welcome' component={Welcome}></Route>
+                        <Route exact path='./' component={Welcome}></Route>
                         <Route exact path='/about' component={About}></Route>
                         <Route exact path='/projects' component={Projects}></Route>
                         <Route exact path='/admin' component={Admin}></Route>
